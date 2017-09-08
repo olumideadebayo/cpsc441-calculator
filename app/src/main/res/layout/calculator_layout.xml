@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:background="#dddddd"
+        android:layout_weight="1.0"
+        android:layout_gravity="fill">
+
+        <EditText
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_columnSpan="4"
+            android:ems="20"
+            android:inputType="none"
+            android:textSize="30sp"
+            android:background="#eeeeee"
+            android:text="" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_width="100dp"
+            android:layout_row="1"
+            android:onClick="clearScreenClick"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_row="2"
+            android:gravity="center"
+            android:onClick="operandClick"
+            android:textSize="25sp"
+
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:onClick="operandClick"
+            android:textSize="25sp"
+
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:onClick="operandClick"
+
+            android:text="3" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_width="100dp"
+            android:layout_row="1"
+            android:onClick="operationClick"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:onClick="operandClick"
+
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:onClick="operandClick"
+
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:onClick="operandClick"
+
+            android:text="6" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="100dp"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_row="2"
+            android:layout_rowSpan="2"
+            android:onClick="operationClick"
+            android:layout_gravity="fill_vertical"
+            android:gravity="center"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:onClick="operandClick"
+
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:onClick="operandClick"
+
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:onClick="operandClick"
+
+            android:text="9" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+
+            android:layout_row="1"
+            android:onClick="operationClick"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+
+
+            android:onClick="operationClick"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="100dp"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_row="4"
+            android:layout_rowSpan="2"
+            android:onClick="resultRequestClick"
+            android:layout_gravity="fill_vertical"
+            android:gravity="center"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_row="5"
+            android:layout_gravity="fill_horizontal|center"
+            android:gravity="center"
+            android:onClick="operandClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/period"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:onClick="operandClick"
+
+            android:text="." />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </GridLayout>
+
+</LinearLayout>
